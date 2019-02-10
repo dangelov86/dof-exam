@@ -10,9 +10,9 @@ metadata:
   name: nginx-host
 spec:
   ports:
-  - port: 80
-    nodePort: 40002
-    protocol: TCP
+  - name: "80"
+    port: 80
+    targetPort: 40002
   selector:
     io.kompose.service: nginx-host
 status:
