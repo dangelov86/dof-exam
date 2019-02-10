@@ -1,6 +1,6 @@
 FROM php:fpm
 
-ADD ./app /var/www/html
+ADD ./app /site/
 
 RUN apt-get update
 RUN pear channel-discover pear.nrk.io
