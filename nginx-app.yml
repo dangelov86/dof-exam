@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
       - name: nginx-host-container
-        image: dangelov86/k8s-jenkins:%IMAGE-PLACEHOLDER%
+        image: dangelov86/nginx:%IMAGE-PLACEHOLDER%
         ports:
         - containerPort: 80 
 ---
