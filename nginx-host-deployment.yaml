@@ -28,4 +28,8 @@ spec:
         - mountPath: /site
           name: nginx-host-claim0
       restartPolicy: Always
+      volumes:
+      - name: nginx-host-claim0
+        persistentVolumeClaim:
+          claimName: nginx-host-claim0
 status: {}
