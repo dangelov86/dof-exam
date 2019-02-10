@@ -16,5 +16,3 @@ spec:
     nodePort: 31000
   selector:
     io.kompose.service: nginx-host
-status:
-  loadBalancer: {}
