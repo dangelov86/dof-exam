@@ -1,6 +1,7 @@
 FROM php:fpm
 
+ADD ./app /etc/nginx/
+
 RUN apt-get update
 RUN pear channel-discover pear.nrk.io
 RUN pear install nrk/Predis
-ADD ./app /etc/nginx/
